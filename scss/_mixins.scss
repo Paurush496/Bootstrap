@@ -1,0 +1,12 @@
+//MIXINS
+
+@mixin spaces( $val1, $val2 ) {
+	padding: $val1 $val2;
+	overflow: hidden;
+}
+
+@mixin shadow( $val3, $val4, $color ) {
+	-webkit-box-shadow: 0 $val3 $val4 $color;
+	-moz-box-shadow: 0 $val3 $val4 $color;
+	box-shadow: 0 $val3 $val4 $color;
+}

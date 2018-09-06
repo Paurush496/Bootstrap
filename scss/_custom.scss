@@ -1,0 +1,40 @@
+@import 'base';
+@import 'variables';
+@import 'mixins';
+
+#cover {
+	background: $bg-color url('img/Festivals-Of-India.jpg') center center no-repeat;
+	background-size: cover;
+	color: $txt-col;
+	height: $ht + 20%;
+	text-align: $pos;
+	display: flex;
+	align-items: $pos;
+}
+
+/* Place text in the middle of the image */
+#cover-caption {
+    width: $ht;
+}
+
+.container {
+	img {
+		@include shadow( 1vw, 1.5vw, $bg-color )
+	}
+}
+.feature-content, .card-deck {
+	@include spaces( 8.5vw, 2vw )
+}
+
+footer {
+
+	background: #262F36;
+	color: $txt-col;
+	padding: 1vw 0;
+
+ a {
+	color: #718FA9;
+	text-decoration: none;
+}
+
+}
