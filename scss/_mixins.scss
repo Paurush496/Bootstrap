@@ -2,7 +2,6 @@
 
 @mixin spaces( $val1, $val2 ) {
 	padding: $val1 $val2;
-	overflow: hidden;
 }
 
 @mixin shadow( $val3, $val4, $color ) {

@@ -17,20 +17,23 @@
     width: $ht;
 }
 
-.container {
+#feature-one {
 	img {
 		@include shadow( 1vw, 1.5vw, $bg-color )
 	}
 }
+
 .feature-content, .card-deck {
-	@include spaces( 8.5vw, 2vw )
+
+		@include spaces( 8.5vw, 2vw )
+		width: $ht;
 }
 
 footer {
 
 	background: #262F36;
 	color: $txt-col;
-	padding: 1vw 0;
+	@include spaces( 1vw, 0 )
 
  a {
 	color: #718FA9;
